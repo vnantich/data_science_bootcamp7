@@ -21,8 +21,9 @@ reservation_bot <- function() {
             phone = readline ("To complete your reservation, we'll need your contact number. What's your phone number?")
             print(paste("Thank you for choosing Ichi Ni San Udon! Your reservation for" ,datetime, "has been confirmed."))
             }
-        else if (welcome == "2"){"Spicy Beef Udon priced at 245 baht: Flank steak cut into cubes, served with our house-made spicy beef broth.
-                                Curry Chicken Udon priced at 200 baht: Chicken leg cut into cubes, along with potatoes and eggplant, served in a special curry soup."
+        else if (welcome == "2"){
+                print("1. Spicy Beef Udon priced at 245 baht: Flank steak cut into cubes, served with our house-made spicy beef broth.
+                    2.Curry Chicken Udon priced at 200 baht: Chicken leg cut into cubes, along with potatoes and eggplant, served in a special curry soup.")
 
         }
 }

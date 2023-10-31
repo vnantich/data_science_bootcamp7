@@ -13,7 +13,6 @@ pycg <- function() {
    flush.console()
    print("---------------------------------------")
    flush.console()
-  
    options = c("R", "P", "S")
    turns = 0
    score = 0
@@ -44,23 +43,21 @@ pycg <- function() {
       print(paste("I'm going with:", bot))
       flush.console()
       if ((toupper(player) == "R" & toupper(bot) == "S") | (toupper(player) == "S" & toupper(bot) == "P") | (toupper(player) == "P" & toupper(bot) == "R")) {
-        turns <- turns + 1
-        score <- score + 1
-        tie <- tie + 0
+        turns = turns + 1
+        score = score + 1
+        tie = tie + 0
         print("Victory is yours!")
         flush.console()
-      } 
-        else if (toupper(player) == toupper(bot)) {
-        turns <- turns + 1
-        score <- score + 0
-        tie <- tie + 1
+      } else if (toupper(player) == toupper(bot)) {
+        turns = turns + 1
+        score = score + 0
+        tie = tie + 1
         print("No winner this time.")
         flush.console()
-      } 
-        else {
-        turns <- turns + 1
-        score <- score + 0
-        tie <- tie + 0
+      } else {
+        turns = turns + 1
+        score = score + 0
+        tie = tie + 0
         print("Better luck next time!")
         flush.console()
       }

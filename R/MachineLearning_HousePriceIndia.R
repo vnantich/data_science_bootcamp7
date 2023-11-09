@@ -37,7 +37,7 @@ pred <- predict(lm_model, newdata = test_data)
 #evaluate
 #RMSE
 rmse_metric <- function(actual, prediction){
-  sqrt(mean(actual - prediction)**2)
+  sqrt(mean((actual - prediction)**2))
 }
 
 #MAE
